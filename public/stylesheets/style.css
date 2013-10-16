@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#booyah {
+  display: block;
+  background-color: #C0C0C0;
+  padding: 30px;
+
+}
+.fox {
+  color: #330066;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px chartreuse;
+}
+input {
+  margin: 10px;
+}
+.calico {
+  width: 20%%;
+}
+#cute {
+  width: 100%;
+  display: inline-block;
+}
+#kittens {
+  display: inline-block;
+  padding: 10px;
+}
+

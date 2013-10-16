@@ -1,0 +1,62 @@
+doctype 5
+html(lang="en")
+
+	include header.html
+
+	body
+		extends layout
+
+		block content
+			h1= "I'm Jaded"
+			p Welcome to #{title}
+
+			//Part II: A Taste of Jade
+
+			#booyah
+
+				h2= "It happens when you get to be as old as I am."
+
+				a(href='http://fall2013.refactoru.com') Student Site
+
+				p
+					| Greetings and salutations!
+					| The student site is awesome. 
+					| You should totally click on the link and visit it.
+					| I dare you.
+					| I double dare you.
+
+				div#cute
+					img.calico(src='images/kittens.jpg')
+
+
+					- var kittens = {description: 'calico'}
+					#kittens
+						if kittens.description
+							h2 Kittens
+							p.description= kittens.description
+						else
+							h1 Kittens
+							p.description There are no kittens.
+
+				
+				
+				mixin myFaveAnimals(animals)
+					ul
+					- for(var i=0; i < animals.length; i++){
+						li(data-attribute="i")= animals[i]
+					- }
+
+				include crazystuff
+
+				form
+					input(type="text", placeholder="Your favorite animal")
+					input(type="submit", value="Submit")
+
+				include scripts
+
+//tags
+//id and class literals
+//attributes
+//piped text
+//conditionals
+//mixins
